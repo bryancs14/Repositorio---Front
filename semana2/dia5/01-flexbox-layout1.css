@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    color: skyblue;
+}
+
+.sectionLeft, .sectionRigth {
+    flex: 1;
+}
+
+.sectionRigth {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: center;
+}
+
+.sectionLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap es la distancia que habra en el eje principal entre todos los hijos flexibles */
+    gap: 30px;
+}
+
+.description {
+    max-width: 400px;
+}

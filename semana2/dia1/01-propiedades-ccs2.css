@@ -1,0 +1,31 @@
+body{
+  background-color: indianred;
+}
+
+.header__title {
+  text-align: center;
+  /*Color es el color del texto no del fondo*/
+  color: #ff00ff;
+}
+
+.subtitulo {
+  color: rgb(200, 50, 0);
+}
+
+.cuadrado {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.cuadrado:nth-child(2) {
+  background-color: hsl(180, 100%, 40%);
+}
+
+.cuadrado:nth-child(3) {
+  background-color: hsl(180, 100%, 30%);
+}
+
+.cuadrado:nth-child(4) {
+  background-color: hsl(180, 100%, 20%);
+}

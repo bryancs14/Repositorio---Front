@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formularios en HTML</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ejem: Carla" />
+        </div>
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="Ejem: Vizcarra" />
+        </div>
+        <div>
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" placeholder="20" />
+        </div>
+        <div>
+          <label for="correo">Correo electronico</label>
+          <input type="email" id="correo" placeholder="Ejem: viz@gmail.com" />
+        </div>
+        <div>
+          <label for="fecha_nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="fecha_nacimiento" />
+        </div>
+        <div>
+          <label for="month">Mes</label>
+          <input type="month" id="month" />
+        </div>
+        <div>
+          <label for="color">color</label>
+          <input type="color" id="color" />
+        </div>
+        <div>
+          <label for="datetime-local">color</label>
+          <input type="datetime-local" id="datetime-local" />
+        </div>
+        <div>
+          <label for="">Genero</label>
+          <br />
+          <label for="femenino">Femenino</label>
+          <input type="radio" id="femenino" value="0" name="radio_genero" />
+          <label for="masculino">Masculino</label>
+          <input type="radio" id="masculino" value="1" name="radio_genero" />
+          <label for="otro_genero">Otro genero</label>
+          <input type="radio" id="otro_genero" value="2" name="radio_genero" />
+        </div>
+        <div>
+          <label for="">Selecciona leguanjes de programacion</label>
+          <br />
+          <label for="check_js">Javascript</label>
+          <input type="checkbox" id="check_js" value="js" name="check_js" />
+          <label for="check_py">Phytom</label>
+          <input type="checkbox" id="check_py" value="py" name="check_py" />
+          <label for="check_ts">Typescript</label>
+          <input type="checkbox" id="check_ts" value="ts" name="check_ts" />
+        </div>
+        <div>
+          <label for="cv">Subir Curriculum:</label>
+          <input type="file" id="cv" name="cv">
+        </div>
+
+        <div>
+          <label for="exp">Escribr su experiencia laboral:</label>
+          <textarea name="exp" id="exp" cols="30" rows="5" maxlength="20"></textarea>
+        </div>
+
+        <div>
+          <label for="select_pais">Seleccione País</label>
+          <select name="select_pais" id="select_pais">
+            <option value="1">Perú</option>
+            <option value="2">Argentina</option>
+            <option value="3">Chile</option>
+            <option value="4">Colombia</option>
+          </select>
+        </div>
+
+        <div>
+          <button type="submit">Crear Cuenta</button>
+          <button type="button">Cancelar</button>
+          <button type="reset">Limpiar campos</button>
+        </div>
+      </fieldset>
+
+    </form>
+  </main>
+</body>
+
+</html>

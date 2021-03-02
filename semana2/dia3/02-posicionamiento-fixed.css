@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  background: linear-gradient(45deg, #990000, #7222b4);
+  min-height: 100vh;
+}
+
+header {
+  height: 60px;
+  min-width: 100vw;
+  background-color: blueviolet;
+  position: fixed;
+  top: 0px;
+  left: 0;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

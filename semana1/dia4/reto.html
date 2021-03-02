@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Formulario de registro de mascotas - Clínica CodiGo</h1>
+    <p><em>Brahyan</em></p>
+  </header>
+  <hr>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Datos del dueño</legend>
+        <div>
+          <label for="nombre_dueño">Nombres: </label>
+          <input type="text" id="nombre_dueño">
+        </div>
+        <div>
+          <label for="apellidos">Apellidos: </label>
+          <input type="text" id="apellidos">
+        </div>
+        <div>
+          <label for="dni">DNI: </label>
+          <input type="text" id="dni">
+        </div>
+        <div>
+          <label for="fecha_nacimiento">Fecha de nacimiento: </label>
+          <input type="date" id="fecha_nacimiento">
+        </div>
+        <div>
+          <label for="direccion">Dirección: </label>
+          <input type="text" id="direccion">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de la mascota</legend>
+        <div>
+          <label for="nombre_mascota">Nombre: </label>
+          <input type="text" id="nombre_mascota">
+        </div>
+        <div>
+          <label for="edad_mascota">Edad en años: </label>
+          <input type="number" id="edad_mascota">
+        </div>
+        <div>
+          <label for="select_raza">Raza: </label>
+          <select name="select_medicamento" id="select_raza">
+            <option value="1">raza 1</option>
+            <option value="2">raza 2</option>
+            <option value="3">raza 3</option>
+            <option value="4">raza 4</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Genero: </label>
+          <label for="femenino">Femenino</label>
+          <input type="radio" id="femenino" value="0" name="radio_genero" />
+          <label for="masculino">Masculino</label>
+          <input type="radio" id="masculino" value="1" name="radio_genero" />
+        </div>
+        <div>
+          <label for="motivo_consulta">Motivo de la consulta: </label>
+          <br>
+          <textarea name="motivo_consulta" id="motivo_consulta" cols="30" rows="5" maxlength="200"></textarea>
+        </div>
+        <div>
+          <label for="fecha_malestar">Fecha de malestar: </label>
+          <input type="date" id="fecha_malestar">
+        </div>
+        <div>
+          <label for="fecha_cita">Fecha de cita: </label>
+          <input type="date" id="fecha_cita">
+        </div>
+        <div>
+          <label for="alergias">Alergias: </label>
+          <br />
+          <label for="check_m1">Medicamento 1</label>
+          <input type="checkbox" id="check_m1" value="m1" name="check_m1" />
+          <label for="check_m2">Medicamento 2</label>
+          <input type="checkbox" id="check_m2" value="m1" name="check_m2" />
+          <label for="check_m3">Medicamento 3</label>
+          <input type="checkbox" id="check_m3" value="m3" name="check_m3" />
+          <label for="check_m4">Medicamento 4</label>
+          <input type="checkbox" id="check_m4" value="m4" name="check_m4" />
+          <label for="check_m5">Medicamento 5</label>
+          <input type="checkbox" id="check_m5" value="m5" name="check_m5" />
+        </div>
+
+      </fieldset>
+    </form>
+  </main>
+
+</body>
+
+</html>

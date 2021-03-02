@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(blue, cyan);
+  border: 1px solid yellow;
+  min-height: 100vh;
+}
+
+.parrafo {
+  background-color: yellow;
+  max-width: 100vw;
+}

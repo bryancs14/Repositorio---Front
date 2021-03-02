@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+aside {
+    width: 300px;
+    border: 1px solid lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+section {
+    flex: 1;
+    padding: 120px;
+    border: 1px solid lightskyblue;
+    overflow-y: scroll;
+}

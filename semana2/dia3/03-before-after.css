@@ -1,0 +1,76 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #f4f4f4;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.parrafo1::before {
+  content: "++";
+}
+
+.parrafo1::after {
+  content: "<3";
+}
+
+.parrafo2::before {
+  content: "";
+  background-color: yellow;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+
+.link {
+  color: #fcfcfc;
+  text-decoration: none;
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid yellow;
+  transition: width 0.2s ease-out;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.card {
+  padding: 10px;
+  margin-top: 10px;
+  width: 300px;
+  /*height: 150px;*/
+  background-color: #111;
+  border-radius: 15px;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 15px;
+  background-image: linear-gradient(#fcfcfc, #456);
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+}
+
+.card h3 {
+  background: linear-gradient(#fcfcfc, #456);
+  color: transparent;
+  -webkit-background-clip: text;
+}
