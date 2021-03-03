@@ -32,18 +32,84 @@
                 </figure>
                 <p class="sidebar__name">Jorge Garnica</p>
             </div>
+            <button class="sidebar__menu">
+                &#9776;
+            </button>
             <nav class="sidebar__nav">
                 <ul class="sidebar__list">
                     <li class="sidebar__item">
                         <a class="sidebar__link" href="#">
-                            <i class="fas fa-desktop    "></i> Dashboard
+                            <i class="fas fa-desktop    "></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">
+                            <i class="fas fa-desktop    "></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">
+                            <i class="fas fa-desktop    "></i>
+                            <span>Dashboard</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </aside>
-        <section class="main__container"></section>
+        <section class="main__container">
+            <div class="container__column">
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus modi quam esse
+                        minus ad pariatur est unde, vero impedit cupiditate nesciunt et hic eaque odit, alias in, sint
+                        praesentium.</span></p>
+            </div>
+            <div class="container__column">
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus modi quam esse
+                        minus ad pariatur est unde, vero impedit cupiditate nesciunt et hic eaque odit, alias in, sint
+                        praesentium.</span></p>
+            </div>
+            <div class="container__column">
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus modi quam esse
+                        minus ad pariatur est unde, vero impedit cupiditate nesciunt et hic eaque odit, alias in, sint
+                        praesentium.</span></p>
+            </div>
+            <div class="container__column">
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus modi quam esse
+                        minus ad pariatur est unde, vero impedit cupiditate nesciunt et hic eaque odit, alias in, sint
+                        praesentium.</span></p>
+            </div>
+            <div class="container__column">
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus modi quam esse
+                        minus ad pariatur est unde, vero impedit cupiditate nesciunt et hic eaque odit, alias in, sint
+                        praesentium.</span></p>
+            </div>
+            <div class="container__column">
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus modi quam esse
+                        minus ad pariatur est unde, vero impedit cupiditate nesciunt et hic eaque odit, alias in, sint
+                        praesentium.</span></p>
+            </div>
+        </section>
     </main>
+    <script>
+        const btnHeaderMenu = document.querySelector("button.header__menu");
+        const asideSideBar = document.querySelector("aside.sidebar");
+        btnHeaderMenu.onclick = e => {
+            asideSideBar.classList.toggle("open");
+        }
+    </script>
+    <script>
+        const btnSidebarMenu = document.querySelector("button.sidebar__menu");
+        btnSidebarMenu.onclick = e => {
+            asideSideBar.classList.toggle("open-mobile");
+        }
+
+        const mql = window.matchMedia('(max-width: 480px)');
+        function screenTest(e) {
+            e.matches && asideSideBar.classList.remove("open");
+        }
+        mql.addListener(screenTest);
+    </script>
 </body>
 
 </html>
